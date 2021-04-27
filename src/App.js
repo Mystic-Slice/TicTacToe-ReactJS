@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Icon from "./Components/Icon";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Card,CardBody,Container,Row,Col,Button} from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,7 +12,7 @@ const App=()=>{
     const [winMessage,setWinMessage]=useState("")
     const reloadGame=()=>{
       setIsCross(false);
-      setWinMessage("empty");
+      setWinMessage("");
       itemArray.fill("empty",0,9);
     };
     const checkIsWinner=()=>{
